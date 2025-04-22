@@ -10,7 +10,7 @@ function App() {
     try {
       console.log("loading");
       const response = await axios({
-        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDD7X4xSUDrydKTIOcvAO7-sj8dJr6pIJo',
+        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?process.env.KEY',
         method: 'POST',
         data: {
           contents: [{ parts: [{ text: Ques}] }]
